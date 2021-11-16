@@ -1,18 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
-import { mergeStyles } from '@fluentui/react';
+import App from './App';
+import { Provider } from 'react-redux';
+import store from './store';
 
-
-// Inject some global styles
-mergeStyles({
-  ':global(body,html,#root)': {
-    margin: 0,
-    padding: 0,
-    height: '100vh',
-  },
-});
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
