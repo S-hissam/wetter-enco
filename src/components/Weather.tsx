@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { WeatherData } from '../store/types';
+import { WeatherData } from '../store/interface';
 import {Stack} from '@fluentui/react'
  
 interface WeatherProps {

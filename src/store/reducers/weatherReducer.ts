@@ -1,4 +1,4 @@
-import { WeatherState, WeatherAction, GET_WEATHER, SET_LOADING } from "../types";
+import { WeatherState, WeatherAction, GET_WEATHER, SET_LOADING } from "../interface";
 
 const initialState: WeatherState = {
   data: null,

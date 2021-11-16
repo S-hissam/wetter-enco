@@ -1,6 +1,6 @@
 import { ThunkAction } from 'redux-thunk';
 import { RootState } from '..';
-import { WeatherAction, WeatherData, GET_WEATHER, SET_LOADING } from '../types';
+import { WeatherAction, WeatherData, GET_WEATHER, SET_LOADING } from '../interface';
 
 export const getWeather = (city: string): ThunkAction<void, RootState, null, WeatherAction> => {
   return async dispatch => {
